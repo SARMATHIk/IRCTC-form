@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRCTC Form</title>
+    <link rel="shortcut icon" href="./assests/image.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="formContainer">
+        <div class="bookingForm">
+          <form action="#" method="post">
+            <div class="formGroup">
+              <i class="fa-regular fa-paper-plane"></i>
+              <label for="from">From</label>
+              <input type="text" id="from" name="from" />
+              <div class="icons">
+                <span class="dot">
+                  <i class="fa-solid fa-arrow-up"></i>
+                  <i class="fa-solid fa-arrow-down"></i>
+                </span>
+              </div>
+            </div>
+            <div class="formGroup">
+              <i class="fa-solid fa-location-dot"></i>
+              <label for="to">To</label>
+              <input type="text" id="to" name="to" />
+            </div>
+            <div class="formGroup">
+              <i class="fa-regular fa-calendar-days"></i>
+              <label for="doj"> DD/MM/YYYY<sup>*</sup></label>
+              <input type="date" id="doj" name="doj" placeholder="25/05/2024" />
+            </div>
+            <div class="formGroup">
+              <i class="fa-solid fa-suitcase"></i>
+              <label for="classes">All Classes</label>
+              <select name="classes" id="classes">
+                <option value="select"></option>
+                <option value="ac">1st AC</option>
+                <option value="ac 3 tier">AC 3 tier</option>
+                <option value="sleeper">Sleeper class</option>
+              </select>
+            </div>
+            <div class="formGroup">
+              <i class="fa-solid fa-table-cells-large"></i>
+              <label for="general">GENERAL</label>
+              <select name="general" id="general">
+                <option value="select"></option>
+                <option value="ac">1st AC</option>
+                <option value="ac 3 tier">AC 3 tier</option>
+                <option value="sleeper">Sleeper class</option>
+              </select>
+            </div>
+            <div class="formGroup1">
+              <input type="checkbox" name="s1" id="s1" />
+              <label for="s1" class="s1"
+                >Person With Dissability Concesssion</label
+              ><br />
+              <input type="checkbox" name="s2" id="s2" />
+              <label for="s2" class="s2">Flexiblw with Date</label><br />
+              <input type="checkbox" name="s3" id="s3" />
+              <label for="s3" class="s3">Train with Avilable Berth</label><br />
+              <input type="checkbox" name="solution4" id="s4" />
+              <label for="s4" class="s4">Railway Pass Concession</label><br />
+            </div>
+            <div class="button">
+              <button type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
